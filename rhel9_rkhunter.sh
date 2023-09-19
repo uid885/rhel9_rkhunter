@@ -1,11 +1,10 @@
 #!/bin/bash -
-############################################################
 # Author:         Christo Deale                  
 # Date  :         2023-08-30            
 # rhel9_rkhunter: Utility to scan for RHEL 9 for Malware Root
 #                 Kits using RKHUNTER & email results via 
 #                 mail            
-############################################################
+
 # Check if EPEL is installed
 if ! rpm -q epel-release &> /dev/null; then
   echo "EPEL repository is not installed. Enabling codeready-builder-for-rhel-9-$(arch)-rpms repository..."
